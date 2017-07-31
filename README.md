@@ -1,2 +1,0 @@
-# mrabito.github.io
-MyPage

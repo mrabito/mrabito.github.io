@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  background-color: #dcf5f7
+}
+
+h1 {
+  margin: 0px;
+  padding: 100px;
+  background-color: #b3dff7;
+}
+
+nav {
+  margin: 0px;
+  background-color: #b1ddf5;
+}
+
+fotter {
+  margin: 0px;
+  background-color: #c8effa;
+  display: block;
+}
