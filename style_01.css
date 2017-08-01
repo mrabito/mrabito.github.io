@@ -19,3 +19,7 @@ fotter {
   background-color: #c8effa;
   display: block;
 }
+
+ul {
+  list-style:none;
+}
