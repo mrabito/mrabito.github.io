@@ -55,17 +55,17 @@ function init() {
           var wing2 = object.children[5];
           var wing1 = object.children[4];
 
-          wing1.material.opacity = 0.6;
-          wing1.material.transparent = true;
-          wing1.material.depthTest = false;
-          wing1.material.side = THREE.DoubleSide;
+          //wing1.material.opacity = 0.6;
+          //wing1.material.transparent = true;
+          //wing1.material.depthTest = false;
+          //wing1.material.side = THREE.DoubleSide;
 
-          wing2.material.opacity = 0.6;
-          wing2.material.depthTest = false;
-          wing2.material.transparent = true;
-          wing2.material.side = THREE.DoubleSide;
+          //wing2.material.opacity = 0.6;
+          //wing2.material.depthTest = false;
+          //wing2.material.transparent = true;
+          //wing2.material.side = THREE.DoubleSide;
 
-          object.scale.set(140, 140, 140);
+          //object.scale.set(140, 140, 140);
           mesh = object;
           scene.add(mesh);
 
