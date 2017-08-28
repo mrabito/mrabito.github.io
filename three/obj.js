@@ -42,14 +42,14 @@ function init() {
     var mesh;
 
     var mtlLoader = new THREE.MTLLoader();
-    mtlLoader.setPath("data/models/");
-    mtlLoader.load('usame.mtl', function(materials) {
-        materials.preload();
+    //mtlLoader.setPath("data/models/");
+    //mtlLoader.load('usame.mtl', function(materials) {
+        //materials.preload();
 
         var objLoader = new THREE.OBJLoader();
-        objLoader.setMaterials(materials);
+        //objLoader.setMaterials(materials);
         objLoader.setPath("data/models/");
-        objLoader.load('usame.obj', function(object) {
+        objLoader.load('test.obj', function(object) {
 
           // configure the wings
           var wing2 = object.children[5];
@@ -71,7 +71,7 @@ function init() {
 
           object.rotation.x = 0.2;
           object.rotation.y = -1.3;
-        });
+        //});
     });
 
 
