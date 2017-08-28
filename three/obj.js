@@ -65,7 +65,7 @@ function init() {
           wing2.material.transparent = true;
           wing2.material.side = THREE.DoubleSide;
 
-          object.scale.set(70, 70, 70);
+          object.scale.set(500, 500, 500);
           mesh = object;
           scene.add(mesh);
 
