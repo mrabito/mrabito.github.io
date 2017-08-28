@@ -71,7 +71,7 @@ function init() {
 
           object.rotation.x = 0.2;
           object.rotation.y = -1.3;
-        //});
+        });
     });
 
 
