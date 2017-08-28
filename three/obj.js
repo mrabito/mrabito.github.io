@@ -41,7 +41,7 @@ function init() {
 
     var mesh;
 
-    var mtlLoader = new THREE.MTLLoader();
+    //var mtlLoader = new THREE.MTLLoader();
     //mtlLoader.setPath("data/models/");
     //mtlLoader.load('usame.mtl', function(materials) {
         //materials.preload();
