@@ -41,13 +41,13 @@ function init() {
 
     var mesh;
 
-    //var mtlLoader = new THREE.MTLLoader();
-    //mtlLoader.setPath("data/models/");
-    //mtlLoader.load('usame.mtl', function(materials) {
-        //materials.preload();
+    var mtlLoader = new THREE.MTLLoader();
+    mtlLoader.setPath("data/models/");
+    mtlLoader.load('usame.mtl', function(materials) {
+        materials.preload();
 
         var objLoader = new THREE.OBJLoader();
-        //objLoader.setMaterials(materials);
+        objLoader.setMaterials(materials);
         objLoader.setPath("data/models/");
         objLoader.load('usame.obj', function(object) {
 
@@ -56,14 +56,14 @@ function init() {
           var wing1 = object.children[4];
 
           //wing1.material.opacity = 0.6;
-          //wing1.material.transparent = true;
-          //wing1.material.depthTest = false;
-          //wing1.material.side = THREE.DoubleSide;
+          wing1.material.transparent = true;
+          wing1.material.depthTest = false;
+          wing1.material.side = THREE.DoubleSide;
 
           //wing2.material.opacity = 0.6;
           //wing2.material.depthTest = false;
-          //wing2.material.transparent = true;
-          //wing2.material.side = THREE.DoubleSide;
+          wing2.material.transparent = true;
+          wing2.material.side = THREE.DoubleSide;
 
           //object.scale.set(140, 140, 140);
           mesh = object;
