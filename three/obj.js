@@ -13,7 +13,7 @@ function init() {
     webGLRenderer.shadowMap.enabled = true;
 
     // position and point the camera to the center of the scene
-    camera.position.x = -500;
+    camera.position.x = -300;
     camera.position.y = 40;
     camera.position.z = 50;
     camera.lookAt(new THREE.Vector3(0, 10, 0));
@@ -21,7 +21,7 @@ function init() {
 
     // add spotlight for the shadows
     var spotLight = new THREE.SpotLight(0xffffff);
-    spotLight.position.set(0, 500, 300);
+    spotLight.position.set(0, 40, 30);
     spotLight.intensity = 2;
     scene.add(spotLight);
 
@@ -65,7 +65,7 @@ function init() {
           wing2.material.transparent = true;
           wing2.material.side = THREE.DoubleSide;
 
-          //object.scale.set(130, 130, 130);
+          //object.scale.set(140, 140, 140);
           mesh = object;
           scene.add(mesh);
 
