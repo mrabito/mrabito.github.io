@@ -1,0 +1,283 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 28.08.2017 23:14:53
+
+newmtl Material__42
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Backpack_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Backpack_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Backpack_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Backpack_Map_Bum.png
+
+newmtl wire_214228153
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8392 0.8941 0.6000
+	Kd 0.8392 0.8941 0.6000
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__46
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Extension_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Extension_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Extension_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Extension_Map_Bum.png
+
+newmtl Material__49
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.9804 0.7686 0.6314
+	Kd 0.9804 0.7686 0.6314
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Material__45
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Eye_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Eye_Map_Dif.png
+	map_d G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Eye_Map_Opa.png
+
+newmtl Material__41
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Head_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Head_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Head_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Head_Map_Bum.png
+
+newmtl Material__44
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bolt_map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bolt_map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bolt_map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bolt_map_Bum.png
+
+newmtl Material__43
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_01_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_01_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_01_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_01_Map_Bum.png
+
+newmtl Material__50
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0275 0.0235 0.0196
+	Kd 0.0275 0.0235 0.0196
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Material__48
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_02_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_02_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_02_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Smalls_02_Map_Bum.png
+
+newmtl wire_153228214
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6000 0.8941 0.8392
+	Kd 0.6000 0.8941 0.8392
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__38
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bag_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bag_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bag_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Bag_Map_Bum.png
+
+newmtl wire_184228153
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.7216 0.8941 0.6000
+	Kd 0.7216 0.8941 0.6000
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_088199225
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.3451 0.7804 0.8824
+	Kd 0.3451 0.7804 0.8824
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__39
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Body_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Body_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Body_Map_Spe.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Body_Map_Spe.png
+
+newmtl Material__35
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Muffler_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Muffler_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Muffler_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Muffler_Map_Bum.png
+
+newmtl Material__36
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Mask_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Mask_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Mask_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Mask_Map_Bum.png
+
+newmtl Material__40
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Mimi_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Mimi_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Body_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Body_Map_Bum.png
+
+newmtl Material__47
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Plug_Map_Dif.png
+	map_Kd G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Plug_Map_Dif.png
+	map_bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Plug_Map_Bum.png
+	bump G:\User\Works_old\CG\15\LastOne_Assets\Chara\Tex\Plug_Map_Bum.png
+
+newmtl wire_028089177
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.1098 0.3490 0.6941
+	Kd 0.1098 0.3490 0.6941
+	Ks 0.3500 0.3500 0.3500
