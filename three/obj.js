@@ -13,7 +13,7 @@ function init() {
     webGLRenderer.shadowMap.enabled = true;
 
     // position and point the camera to the center of the scene
-    camera.position.x = -30;
+    camera.position.x = -300;
     camera.position.y = 40;
     camera.position.z = 50;
     camera.lookAt(new THREE.Vector3(0, 10, 0));
