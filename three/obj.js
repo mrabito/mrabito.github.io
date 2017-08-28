@@ -49,7 +49,7 @@ function init() {
         var objLoader = new THREE.OBJLoader();
         //objLoader.setMaterials(materials);
         objLoader.setPath("data/models/");
-        objLoader.load('test.obj', function(object) {
+        objLoader.load('usame.obj', function(object) {
 
           // configure the wings
           var wing2 = object.children[5];
