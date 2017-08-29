@@ -1,6 +1,8 @@
 function init() {
 
+
     // create a scene, that will hold all our elements such as objects, cameras and lights.
+
     var scene = new THREE.Scene();
 
     // create a camera, which defines where we're looking at.
@@ -8,19 +10,19 @@ function init() {
 
     // create a render and set the size
     var webGLRenderer = new THREE.WebGLRenderer();
-    webGLRenderer.setClearColor(new THREE.Color(0xaaaaff));
+    webGLRenderer.setClearColor(new THREE.Color(0xffffff));
     webGLRenderer.setSize(window.innerWidth, window.innerHeight);
     webGLRenderer.shadowMap.enabled = true;
 
     // position and point the camera to the center of the scene
-    camera.position.x = -300;
-    camera.position.y = 40;
+    camera.position.x = 0;
+    camera.position.y = 0;
     camera.position.z = 50;
     camera.lookAt(new THREE.Vector3(0, 10, 0));
 
 
     // add spotlight for the shadows
-    var spotLight = new THREE.SpotLight(0xffffff);
+    var spotLight = new THREE.SpotLight(0xddffcc);
     spotLight.position.set(0, 40, 30);
     spotLight.intensity = 2;
     scene.add(spotLight);
@@ -42,6 +44,7 @@ function init() {
     var mesh;
 
     var mtlLoader = new THREE.MTLLoader();
+    mtlLoader.crossOrigin = '*';
     mtlLoader.setPath("data/models/");
     mtlLoader.load('usame.mtl', function(materials) {
         materials.preload();
@@ -52,38 +55,37 @@ function init() {
         objLoader.load('usame.obj', function(object) {
 
           // configure the wings
-          var wing2 = object.children[5];
-          var wing1 = object.children[4];
+          //var wing2 = object.children[5];
+          //var wing1 = object.children[4];
 
           //wing1.material.opacity = 0.6;
-          wing1.material.transparent = true;
-          wing1.material.depthTest = false;
-          wing1.material.side = THREE.DoubleSide;
+          //wing1.material.transparent = true;
+          //wing1.material.depthTest = false;
+          //wing1.material.side = THREE.DoubleSide;
 
           //wing2.material.opacity = 0.6;
           //wing2.material.depthTest = false;
-          wing2.material.transparent = true;
-          wing2.material.side = THREE.DoubleSide;
+          //wing2.material.transparent = true;
+          //wing2.material.side = THREE.DoubleSide;
 
-          //object.scale.set(140, 140, 140);
+          object.scale.set(1, 1, 1);
+          object.position.set(0,-5,-20);
           mesh = object;
           scene.add(mesh);
 
-          object.rotation.x = 0.2;
-          object.rotation.y = -1.3;
+          object.rotation.x = 6;
+          object.rotation.z = -0.2;
         });
     });
 
-
     render();
-
 
     function render() {
 
         if (mesh) {
             mesh.rotation.y += 0.006;
+            mesh.rotation.x += 0.0001
         }
-
 
         // render using requestAnimationFrame
         requestAnimationFrame(render);
