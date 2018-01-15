@@ -1,13 +1,9 @@
+/*
 body {
   margin: 0px;
   background-color: #dcf5f7
 }
 
-h1 {
-  margin: 0px;
-  padding: 100px;
-  background-color: #b3dff7;
-}
 
 nav {
   margin: 0px;
@@ -19,7 +15,37 @@ fotter {
   background-color: #c8effa;
   display: block;
 }
+*/
+body {
+  background-color: #E2E28A;
+}
+header {
+  background-color: #F5B8B5;
+}
 
-ul {
-  list-style:none;
+h1 {
+  color: #864544;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.mainwrapper {
+  background-color: #FBE5EB
+}
+
+a {
+  color: #353f41
+}
+
+li {
+  list-style: none;
+  float: left;
+  padding: 5px;
+}
+
+.copyright {
+  font-size: 12px;
 }
