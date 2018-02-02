@@ -1,35 +1,126 @@
-/*
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+
+
 body {
-  background-color: #E2E28A;
-}
-header {
-  background-color: #F5B8B5;
+  background-color: #C0A36B;
+  margin: 0px;
+  height: 100%
 }
 
 h1 {
-  color: #864544;
+  position: absolute;
+  color: #7FC4C1;
   font-size: 36px;
+  mix-blend-mode: screen;
+  z-index: 1;
+  text-shadow: 3px 3px 4px #C0A36B
 }
 
+.circle_1 {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  height: 200px;
+  width: 200px;
+  background: #93CA82;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+  animation: border-animation 40s infinite linear;
+  mix-blend-mode: multiply;
+}
+.circle_2 {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  height: 160px;
+  width: 160px;
+  background: #95B2DD;
+  border-radius: 33% 40% 50% 40%/30% 50% 30% 50%;
+  animation: border-animation 200s infinite linear;
+  mix-blend-mode: multiply;
+}
+.circle_3 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 140px;
+  width: 140px;
+  background: #989BCC;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+  animation: border-animation 150s infinite linear;
+  mix-blend-mode: multiply;
+}
 h2 {
   font-size: 18px;
+  color: #F3F9F9;
+  text-shadow: 2px 2px 3px #C0A36B
+}
+
+.basewrapper {
+
+  background-color: #F3F9F9;
+  border-radius: 10px;
+  padding: 10px;
+  height: 90vh;
+  margin: 30px;
+
 }
 
 .mainwrapper {
-  background-color: #FBE5EB
+  position: relative;
+  background-color: #7DCDF3;
+  margin: 0 auto;
+  height: 500px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius:  30% 15%  30% 15% /  50% 20%  50% 20%;
+  box-shadow: 3px 3px 10px #C0A36B
 }
 
 a {
-  color: #353f41
+  color: #F3F9F9;
+  text-shadow: 2px 2px 3px #C0A36B
 }
-
+nav {
+  top: 100px;
+  left: 200px;
+  margin: 0 auto;
+  width: 400px;
+  height: 180px;
+  position: absolute;
+  z-index: 1;
+}
 li {
   list-style: none;
   float: left;
   padding: 5px;
 }
 
+.link {
+  top: 250px;
+  left: 200px;
+  margin: 0 auto;
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #F3F9F9;
+
+  text-shadow: 0px 0px 2px #C0A36B
+}
+
 .copyright {
   font-size: 12px;
 }
-*/
+
+@keyframes border-animation {
+  to { transform: rotate(360deg); }
+}
