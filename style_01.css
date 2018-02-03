@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette');
-
-
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
 
 body {
   background-color: #C0A36B;
@@ -9,12 +7,13 @@ body {
 }
 
 h1 {
+  font-family: "Nico Moji";
   position: absolute;
-  color: #7FC4C1;
+  color: #F3F9F9;
   font-size: 36px;
   mix-blend-mode: screen;
   z-index: 1;
-  text-shadow: 3px 3px 4px #C0A36B
+  text-shadow: 3px 3px 4px #7E9CAB
 }
 
 .circle_1 {
@@ -23,7 +22,7 @@ h1 {
   left: -50px;
   height: 200px;
   width: 200px;
-  background: #93CA82;
+  background: rgba(147, 202, 130, 0.4);
   border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
   animation: border-animation 40s infinite linear;
   mix-blend-mode: multiply;
@@ -34,7 +33,7 @@ h1 {
   left: 10px;
   height: 160px;
   width: 160px;
-  background: #95B2DD;
+  background: rgba(149, 178, 221, 0.3);
   border-radius: 33% 40% 50% 40%/30% 50% 30% 50%;
   animation: border-animation 200s infinite linear;
   mix-blend-mode: multiply;
@@ -45,10 +44,9 @@ h1 {
   right: 0px;
   height: 140px;
   width: 140px;
-  background: #989BCC;
+  background: rgba(152, 155, 204, 0.7);
   border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
   animation: border-animation 150s infinite linear;
-  mix-blend-mode: multiply;
 }
 h2 {
   font-size: 18px;
@@ -58,7 +56,8 @@ h2 {
 
 .basewrapper {
 
-  background-color: #F3F9F9;
+  background-color: #f3f9f9;
+  background-image: url("img/bg_001.jpg");
   border-radius: 10px;
   padding: 10px;
   height: 90vh;
@@ -67,8 +66,9 @@ h2 {
 }
 
 .mainwrapper {
+  
   position: relative;
-  background-color: #7DCDF3;
+  background-color: rgba(125, 205, 243, 0.65);
   margin: 0 auto;
   height: 500px;
   width: 800px;
