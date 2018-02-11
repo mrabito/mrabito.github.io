@@ -1,14 +1,14 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 
 body {
   background-color: #C0A36B;
   margin: 0px;
   height: 100%
 }
-
 h1 {
   font-family: "Nico Moji";
-  position: absolute;
+  /*position: absolute;*/
   color: #F3F9F9;
   font-size: 36px;
   mix-blend-mode: screen;
@@ -20,9 +20,16 @@ h2 {
   color: #F3F9F9;
   text-shadow: 2px 2px 3px #C0A36B
 }
-
+h3 {
+  font-size: 16px;
+  color: #F3F9F9;
+  text-shadow: 2px 2px 3px #C0A36B
+}
+section {
+  position: relative;
+  left: 50px;
+}
 .basewrapper {
-
   background-color: #f3f9f9;
   /*background-image: url("img/bg_001.jpg");*/
   border-radius: 10px;
@@ -33,50 +40,59 @@ h2 {
 .mainwrapper { 
   position: relative;
   background-color: rgba(125, 205, 243, 0.65);
-  margin: 0 auto;
-  height: 560px;
   width: 800px;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  top: 150px;
+  transform: translateX(-50%);
   border-radius:  30% 15%  30% 15% /  50% 20%  50% 20%;
   box-shadow: 3px 3px 10px #C0A36B
 }
+
 a {
   color: #F3F9F9;
   text-shadow: 2px 2px 3px #C0A36B
 }
+p {
+  font-size: 14px;
+  color: #F3F9F9;
+  text-shadow: 2px 2px 3px #C0A36B
+}
 nav {
-  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
-li {
+ul{
+  padding-left: 0;
+}
+ul li {
+  font-size: 14px;
   list-style: none;
-  /*float: left;*/
-  padding: 5px;
+  padding: 0px 5px 0px 0px;
+  color: #F3F9F9;
+  text-shadow: 2px 2px 3px #C0A36B;
 }
-
-.link {
-  position: relative;
-  z-index: 1;
+.left li{
+  float: left;
+}
+article {
+  margin-bottom: 20px;
+}
+.clearfix::after{
+  content: "";
   display: block;
+  clear: both;
 }
-
 main {
   position: relative;
-  top: 100px;
   width: 600px;
   margin: 0 auto;
 }
-
 footer {
   position: absolute;
   bottom: 0;
   right: 0;
   color: #F3F9F9;
-
   text-shadow: 0px 0px 2px #C0A36B
 }
 
