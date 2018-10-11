@@ -7,11 +7,11 @@ const width  = window.innerWidth;
 const height = window.innerHeight;
 
 // レンダラの作成、DOMに追加
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setSize(width, height);
 renderer.setClearColor(0xffffff, 1.0);
 document.body.appendChild(renderer.domElement);
-renderer.shadowMap.enabled = true;
+renderer.shadowMap.enabled = true;     
 //renderer.gammaOutput = true;
 
 // シーンの作成、カメラの作成と追加、ライトの作成と追加
