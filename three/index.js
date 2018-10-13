@@ -21,6 +21,8 @@ const scene  = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(50, width / height, 1, 1000 );
 
 // Lighting
+var ambientLight = new THREE.AmbientLight( 0x111155 );
+scene.add( ambientLight );
 var light = new THREE.DirectionalLight( 0xffffff );
 light.position.set( 0, 0.5, 1 );
 /*light.castShadow = true;
@@ -111,7 +113,7 @@ sphere = new THREE.Mesh( geometry, material );
 
 // Charactor
 const loader = new THREE.GLTFLoader();
-const url = 'model/LabBear_v002.glb';
+const url = 'model/LabBear.glb';
 loader.load(url, (data) => {
   const gltf = data;
   gltf.scene.traverse( function( node ) {
@@ -121,7 +123,7 @@ loader.load(url, (data) => {
   object.scale.set(scale, scale, scale);
   const animations = gltf.animations;
   mixer = new THREE.AnimationMixer(object);
-  const anime = mixer.clipAction(animations[0]);
+  const anime = mixer.clipAction(animations[1]);
 
   anime.play();
   scene.add(object);
@@ -138,11 +140,24 @@ controls.autoRotate = true;
 controls.autoRotateSpeed = 1.0;
 camera.position.set(0, 2, 90);
 
+var renderScene = new THREE.RenderPass( scene, camera );
+var bloomPass = new THREE.UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
+bloomPass.renderToScreen = true;
+bloomPass.threshold = 0.0;
+bloomPass.strength = 0.8;
+bloomPass.radius = 0.0;
+
+composer = new THREE.EffectComposer( renderer );
+composer.setSize( window.innerWidth, window.innerHeight );
+composer.addPass( renderScene );
+composer.addPass( bloomPass );
+
 // Rendering
 const animation = () => {
-  renderer.render(scene, camera);
+  //renderer.render(scene, camera);
+  composer.render();
   //controls.update();
-  water.material.uniforms.time.value += 1.0 / 60.0;
+  water.material.uniforms.time.value += 1.0 / 100.0;
   requestAnimationFrame(animation);
   if (mixer) mixer.update(clock.getDelta());
 };
