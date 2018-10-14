@@ -2,6 +2,8 @@ var mixer = null;
 var clock = new THREE.Clock();
 const scale = 100.0
 
+var sceneState = true;
+
 // Get width height
 const width  = window.innerWidth;
 const height = window.innerHeight;
@@ -130,6 +132,7 @@ loader.load(url, (data) => {
 });
 
 // OrbitControls
+/* 
 const controls = new THREE.OrbitControls( camera, renderer.domElement );
 controls.target.set(0,1,0)
 controls.enablePan = false;
@@ -137,14 +140,16 @@ controls.maxDistance = 100.0;
 controls.minDistance = 3.0;
 controls.maxPolarAngle = Math.PI * 0.495;
 controls.autoRotate = true;
-controls.autoRotateSpeed = 1.0;
+controls.autoRotateSpeed = 1.0;*/
 camera.position.set(0, 2, 90);
 
+
+// Glow effect
 var renderScene = new THREE.RenderPass( scene, camera );
 var bloomPass = new THREE.UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
 bloomPass.renderToScreen = true;
 bloomPass.threshold = 0.0;
-bloomPass.strength = 0.8;
+bloomPass.strength = 0.5;
 bloomPass.radius = 0.0;
 
 composer = new THREE.EffectComposer( renderer );
@@ -152,14 +157,28 @@ composer.setSize( window.innerWidth, window.innerHeight );
 composer.addPass( renderScene );
 composer.addPass( bloomPass );
 
+function sceneChange(){
+  if (sceneState){
+    sceneState = false;
+  } else {
+    sceneState = true;
+  };
+};
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+}
+window.addEventListener( 'resize', onWindowResize, false );
+
 // Rendering
 const animation = () => {
   //renderer.render(scene, camera);
-  composer.render();
-  //controls.update();
-  water.material.uniforms.time.value += 1.0 / 100.0;
-  requestAnimationFrame(animation);
   if (mixer) mixer.update(clock.getDelta());
+  composer.render();
+  water.material.uniforms.time.value += 1.0 / 150.0;
+  requestAnimationFrame(animation);
 };
 
 animation();

@@ -17,8 +17,24 @@
     <script src="libs/CopyShader.js"></script>
     <script src="libs/LuminosityHighPassShader.js"></script>
     <script src="libs/UnrealBloomPass.js"></script>
+    <style type="text/css">
+        <!--
+        body{
+            margin: 0px;
+            overflow: hidden;
+        }
+        .onCanvas{
+            position: absolute
+        }
+        -->
+    </style>
 </head>
 <body>
+    <div class="onCanvas">
+        <input type="button" value="おと" onclick="changeGain();"/>
+        <input type="button" value="カメラ移動(準備中)" onclick="moveCam"();/>
+    </div>
     <script src="index.js"></script>
+    <script src="audio.js"></script>
 </body>
 </html>
